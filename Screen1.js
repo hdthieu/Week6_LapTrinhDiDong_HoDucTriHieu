@@ -66,9 +66,9 @@ const App = () => {
     },
     {
       id: '9',
-      name: 'Hiểu lòng con trẻ',
-      shop: 'Shop Minh Long Book',
-      image: require('./assets/hieu_long_con_tre.png'),
+      name: 'Donald Trump Thiên tài lãnh đạo',
+      shop: 'Shop Donald Trump',
+      image: require('./assets/trump1.png'),
     },
     {
       id: '10',
