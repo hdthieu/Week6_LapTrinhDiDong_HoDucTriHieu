@@ -68,7 +68,7 @@ const App = () => {
       image: require('./assets/carbusbtops21.png'),
     },
     {
-      id: '1',
+      id: '6',
       name: 'Cáp chuyển từ Cổng USB sang PS2...',
       starRV: require('./assets/Star2.png'),
       notstarRV: require('./assets/Star5.png'),
@@ -78,7 +78,7 @@ const App = () => {
       image: require('./assets/giacchuyen1.png'),
     },
     {
-      id: '2',
+      id: '7',
       name: 'Cáp chuyển từ Cổng USB sang PS2...',
       starRV: require('./assets/Star2.png'),
       notstarRV: require('./assets/Star5.png'),
@@ -105,7 +105,13 @@ const App = () => {
         </View>
         <View style={styles.textContainer}>
           <Text>{item.name}</Text>
-          <View style={{ flexDirection: 'row' }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              width: 106,
+              alignItems: 'center',
+            }}>
             <Image source={item.starRV} />
             <Image source={item.starRV} />
             <Image source={item.starRV} />
@@ -114,8 +120,8 @@ const App = () => {
             <Text>{item.quantityReview}</Text>
           </View>
           <View style={{ flexDirection: 'row' }}>
-            <Text>{item.price}</Text>
-            <Text>{item.discount}</Text>
+            <Text style={styles.style_price}>{item.price}</Text>
+            <Text style={styles.style_discount}>{item.discount}</Text>
           </View>
         </View>
       </TouchableOpacity>
@@ -186,6 +192,7 @@ const styles = StyleSheet.create({
   textContainer: {
     flexDirection: 'column',
     flex: 1,
+    margin:'12%'
   },
   itemContainer: {
     flexDirection: 'column',
@@ -202,6 +209,20 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '0% 5%',
+  },
+  style_price: {
+    fontFamily: 'Roboto',
+    fontSize: 12,
+    fontWeight: 700,
+    marginTop: '5%',
+  },
+
+  style_discount: {
+    color: '#969DAA',
+    fontFamily: 'Roboto',
+    fontSize: 12,
+    fontWeight: 700,
+    marginTop: '5%',
   },
 });
 
